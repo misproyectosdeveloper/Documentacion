@@ -1,0 +1,2980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67F9B75E-CC4F-4F19-B479-6C97B4554A80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ScomerV01.My.MyApplication</StartupObject>
+    <RootNamespace>ScomerV01</RootNamespace>
+    <AssemblyName>ScomerV01</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ScomerV01.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ScomerV01.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassPassWord, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LibreriaVB2005\ClassPassWord\ClassPassWord\bin\Release\ClassPassWord.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaAfipProduccion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AAA-LIbreria Afip 2019 FM 4.5\LibreriaAfipProduccion\LibreriaAfipProduccion\bin\Debug\LibreriaAfipProduccion.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Printing.PrintForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalisisComprasImportacion.designer.vb">
+      <DependentUpon>AnalisisComprasImportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisisComprasImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalisisCompraVentaPorCliente.Designer.vb">
+      <DependentUpon>AnalisisCompraVentaPorCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisisCompraVentaPorCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalisisDeCosteos.Designer.vb">
+      <DependentUpon>AnalisisDeCosteos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisisDeCosteos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalisisResultadosLotesCosteo.Designer.vb">
+      <DependentUpon>AnalisisResultadosLotesCosteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisisResultadosLotesCosteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArreglaSaldosIniciales.Designer.vb">
+      <DependentUpon>ArreglaSaldosIniciales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArreglaSaldosIniciales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArreglaStock.designer.vb">
+      <DependentUpon>ArreglaStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArreglaStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionLotesYAsientos.vb" />
+    <Compile Include="AutorizacionAFIP.vb" />
+    <Compile Include="Cantidades.Designer.vb">
+      <DependentUpon>Cantidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cantidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClaseLotesYAsientos.vb" />
+    <Compile Include="Copiafechaafechaentregaenremitoscabeza.Designer.vb">
+      <DependentUpon>Copiafechaafechaentregaenremitoscabeza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Copiafechaafechaentregaenremitoscabeza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuilNoValidos.Designer.vb">
+      <DependentUpon>CuilNoValidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CuilNoValidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FontI2OF5.vb" />
+    <Compile Include="FuncionesAceraRow.vb" />
+    <Compile Include="FuncionesExcelWord.vb" />
+    <Compile Include="FuncionesImpositivas.vb" />
+    <Compile Include="FuncionesKrikos.vb" />
+    <Compile Include="FuncionesParaReader.vb" />
+    <Compile Include="Informes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListaDevolucionIngresoLogistico.Designer.vb">
+      <DependentUpon>ListaDevolucionIngresoLogistico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDevolucionIngresoLogistico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaChequesSinNotaDebito.Designer.vb">
+      <DependentUpon>ListaChequesSinNotaDebito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaChequesSinNotaDebito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoConsumosPT.Designer.vb">
+      <DependentUpon>ListadoConsumosPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoConsumosPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaFacturas.Designer.vb">
+      <DependentUpon>ListaFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaFcaturasFCE.Designer.vb">
+      <DependentUpon>ListaFcaturasFCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaFcaturasFCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaNotasFinancierasOtrosProveedores.Designer.vb">
+      <DependentUpon>ListaNotasFinancierasOtrosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaNotasFinancierasOtrosProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSICORE.Designer.vb">
+      <DependentUpon>ListaSICORE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSICORE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaIngresosArticulosLogisticos.Designer.vb">
+      <DependentUpon>ListaIngresosArticulosLogisticos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaIngresosArticulosLogisticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaListaDePrecios.Designer.vb">
+      <DependentUpon>ListaListaDePrecios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaListaDePrecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaListaDePreciosProveedores.Designer.vb">
+      <DependentUpon>ListaListaDePreciosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaListaDePreciosProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPedidos.Designer.vb">
+      <DependentUpon>ListaPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPlanDeCuentas.Designer.vb">
+      <DependentUpon>ListaPlanDeCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPlanDeCuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRemitosLogisticos.Designer.vb">
+      <DependentUpon>ListaRemitosLogisticos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRemitosLogisticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaStockArticulosLogisticos.Designer.vb">
+      <DependentUpon>ListaStockArticulosLogisticos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaStockArticulosLogisticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaTransferenciasLogisticas.Designer.vb">
+      <DependentUpon>ListaTransferenciasLogisticas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaTransferenciasLogisticas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionCesion.Designer.vb">
+      <DependentUpon>OpcionCesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionCesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionClientes.Designer.vb">
+      <DependentUpon>OpcionClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionCosteo.Designer.vb">
+      <DependentUpon>OpcionCosteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionCosteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionDirectorio.designer.vb">
+      <DependentUpon>OpcionDirectorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionDirectorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionImportacion.Designer.vb">
+      <DependentUpon>OpcionImportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionImportacionExcel.Designer.vb">
+      <DependentUpon>OpcionImportacionExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionImportacionExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionInformeGestionCompra.Designer.vb">
+      <DependentUpon>OpcionInformeGestionCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionInformeGestionCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionIFCO.Designer.vb">
+      <DependentUpon>OpcionIFCO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionIFCO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionInformeComprobantesQueAfectaALotes.Designer.vb">
+      <DependentUpon>OpcionInformeComprobantesQueAfectaALotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionInformeComprobantesQueAfectaALotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionInformeLogistico.Designer.vb">
+      <DependentUpon>OpcionInformeLogistico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionInformeLogistico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionListaDePrecios.Designer.vb">
+      <DependentUpon>OpcionListaDePrecios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionListaDePrecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionNumero.Designer.vb">
+      <DependentUpon>OpcionNumero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionNumero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionPagos.designer.vb">
+      <DependentUpon>OpcionPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionPedidos.Designer.vb">
+      <DependentUpon>OpcionPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionInformeOrdenCompra.Designer.vb">
+      <DependentUpon>OpcionInformeOrdenCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionInformeOrdenCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionReciboFactura.Designer.vb">
+      <DependentUpon>OpcionReciboFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionReciboFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionReproceso1.Designer.vb">
+      <DependentUpon>OpcionReproceso1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionReproceso1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionVentasTotalesPorArticulos.Designer.vb">
+      <DependentUpon>OpcionVentasTotalesPorArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionVentasTotalesPorArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionVentasYCostosDeLotes.Designer.vb">
+      <DependentUpon>OpcionVentasYCostosDeLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionVentasYCostosDeLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlantillaReciboSueldo.vb" />
+    <Compile Include="Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionaIngresos.Designer.vb">
+      <DependentUpon>SeleccionaIngresos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionaIngresos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarRemitosParaFactura.Designer.vb">
+      <DependentUpon>SeleccionarRemitosParaFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarRemitosParaFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaActualizacionPedido.Designer.vb">
+      <DependentUpon>UnaActualizacionPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaActualizacionPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaCesionFactura.Designer.vb">
+      <DependentUpon>UnaCesionFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaCesionFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaCuentaBancaria.Designer.vb">
+      <DependentUpon>UnaCuentaBancaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaCuentaBancaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaImpresionRecibo.vb" />
+    <Compile Include="UnaNVLPContable.Designer.vb">
+      <DependentUpon>UnaNVLPContable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaNVLPContable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaOrdenCompra.designer.vb">
+      <DependentUpon>UnaOrdenCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaOrdenCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaPreFactura.designer.vb">
+      <DependentUpon>UnaPreFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaPreFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaRetencion.Designer.vb">
+      <DependentUpon>UnaRetencion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaRetencion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnAsiento.Designer.vb">
+      <DependentUpon>UnAsiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnAsiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTablaSucursalCliente.Designer.vb">
+      <DependentUpon>UnaTablaSucursalCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTablaSucursalCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTablaTransporte.designer.vb">
+      <DependentUpon>UnaTablaTransporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTablaTransporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReprocesoLotes.Designer.vb">
+      <DependentUpon>UnReprocesoLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReprocesoLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnSaldoFCE.Designer.vb">
+      <DependentUpon>UnSaldoFCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnSaldoFCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCompobanteFCE.designer.vb">
+      <DependentUpon>UnCompobanteFCE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCompobanteFCE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnComprobanteAImputar.Designer.vb">
+      <DependentUpon>UnComprobanteAImputar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnComprobanteAImputar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnComprobanteAsociado.Designer.vb">
+      <DependentUpon>UnComprobanteAsociado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnComprobanteAsociado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnConsumoPT.Designer.vb">
+      <DependentUpon>UnConsumoPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnConsumoPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReciboDebitoCreditoGenerica.Designer.vb">
+      <DependentUpon>UnReciboDebitoCreditoGenerica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReciboDebitoCreditoGenerica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionaArticulosPedido.Designer.vb">
+      <DependentUpon>SeleccionaArticulosPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionaArticulosPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaDevolucionIngresoLogistico.Designer.vb">
+      <DependentUpon>UnaDevolucionIngresoLogistico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaDevolucionIngresoLogistico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTransferenciaLogistica.Designer.vb">
+      <DependentUpon>UnaTransferenciaLogistica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTransferenciaLogistica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnChequeRechazo.Designer.vb">
+      <DependentUpon>UnChequeRechazo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnChequeRechazo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReciboDebitoCredito.Designer.vb">
+      <DependentUpon>UnReciboDebitoCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReciboDebitoCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnIngresoArticulosLogisticos.Designer.vb">
+      <DependentUpon>UnIngresoArticulosLogisticos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnIngresoArticulosLogisticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnPedido.Designer.vb">
+      <DependentUpon>UnPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaImputacionSaldosIniciales.Designer.vb">
+      <DependentUpon>UnaImputacionSaldosIniciales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaImputacionSaldosIniciales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCierreFactura.designer.vb">
+      <DependentUpon>ListaCierreFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCierreFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCompraDivisas.Designer.vb">
+      <DependentUpon>ListaCompraDivisas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCompraDivisas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDiferenciaInventario.Designer.vb">
+      <DependentUpon>ListaDiferenciaInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDiferenciaInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaLibroIvaCompra.Designer.vb">
+      <DependentUpon>ListaLibroIvaCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaLibroIvaCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPercepcionesPercibidas.Designer.vb">
+      <DependentUpon>ListaPercepcionesPercibidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPercepcionesPercibidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRetencionesPercibidas.Designer.vb">
+      <DependentUpon>ListaRetencionesPercibidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRetencionesPercibidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionClienteDesdeHasta.Designer.vb">
+      <DependentUpon>OpcionClienteDesdeHasta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionClienteDesdeHasta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionFacturasElectronica.Designer.vb">
+      <DependentUpon>OpcionFacturasElectronica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionFacturasElectronica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionCompraVentaPorLotes.Designer.vb">
+      <DependentUpon>OpcionCompraVentaPorLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionCompraVentaPorLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionDocumentosNoImputados.Designer.vb">
+      <DependentUpon>OpcionDocumentosNoImputados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionDocumentosNoImputados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionFondoFijo.Designer.vb">
+      <DependentUpon>OpcionFondoFijo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionFondoFijo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionInformeParaInventario.Designer.vb">
+      <DependentUpon>OpcionInformeParaInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionInformeParaInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaArticulosSecuencial.Designer.vb">
+      <DependentUpon>ListaArticulosSecuencial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaArticulosSecuencial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaProveedores.Designer.vb">
+      <DependentUpon>ListaProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRecuperoSenia.Designer.vb">
+      <DependentUpon>ListaRecuperoSenia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRecuperoSenia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSueldosOrdenPago.Designer.vb">
+      <DependentUpon>ListaSueldosOrdenPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSueldosOrdenPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionEmisorYLetra.Designer.vb">
+      <DependentUpon>OpcionEmisorYLetra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionEmisorYLetra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionInformeLotesReventasFacturados.Designer.vb">
+      <DependentUpon>OpcionInformeLotesReventasFacturados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionInformeLotesReventasFacturados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionLotesAImputarFacturasProveedor.designer.vb">
+      <DependentUpon>OpcionLotesAImputarFacturasProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionLotesAImputarFacturasProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionOtrosProveedores.Designer.vb">
+      <DependentUpon>OpcionOtrosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionOtrosProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionInformeReprocesos.Designer.vb">
+      <DependentUpon>OpcionInformeReprocesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionInformeReprocesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionParaNegocios.Designer.vb">
+      <DependentUpon>OpcionParaNegocios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionParaNegocios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionVentas.Designer.vb">
+      <DependentUpon>OpcionVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSaldosFondosFijoDetalle.Designer.vb">
+      <DependentUpon>ListaSaldosFondosFijoDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSaldosFondosFijoDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionaLotesAfectados.Designer.vb">
+      <DependentUpon>SeleccionaLotesAfectados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionaLotesAfectados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaFacturaProveedor.Designer.vb">
+      <DependentUpon>UnaFacturaProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaFacturaProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaFacturaProveedorFondoFijo.Designer.vb">
+      <DependentUpon>UnaFacturaProveedorFondoFijo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaFacturaProveedorFondoFijo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaLiquidacionInsumos.Designer.vb">
+      <DependentUpon>UnaLiquidacionInsumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaLiquidacionInsumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaListaDePreciosProveedores.Designer.vb">
+      <DependentUpon>UnaListaDePreciosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaListaDePreciosProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaNVLP.designer.vb">
+      <DependentUpon>UnaNVLP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaNVLP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTablaDeBalances.Designer.vb">
+      <DependentUpon>UnaTablaDeBalances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTablaDeBalances.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaRendicion.Designer.vb">
+      <DependentUpon>UnaRendicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaRendicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaFondosFijos.designer.vb">
+      <DependentUpon>ListaFondosFijos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaFondosFijos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRendiciones.Designer.vb">
+      <DependentUpon>ListaRendiciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRendiciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnBalance.Designer.vb">
+      <DependentUpon>UnBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCierreFactura.designer.vb">
+      <DependentUpon>UnCierreFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCierreFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnConsumoDeInsumo.Designer.vb">
+      <DependentUpon>UnConsumoDeInsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnConsumoDeInsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnDatosEmisor.Designer.vb">
+      <DependentUpon>UnDatosEmisor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnDatosEmisor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnFondoFijo.Designer.vb">
+      <DependentUpon>UnFondoFijo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnFondoFijo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnMovimientoFondoFijo.Designer.vb">
+      <DependentUpon>UnMovimientoFondoFijo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnMovimientoFondoFijo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnRecibo.Designer.vb">
+      <DependentUpon>UnRecibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnRecibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaAgenda.Designer.vb">
+      <DependentUpon>UnaAgenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaAgenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaCompraDivisas.Designer.vb">
+      <DependentUpon>UnaCompraDivisas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaCompraDivisas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaDiferenciaInventario.Designer.vb">
+      <DependentUpon>UnaDiferenciaInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaDiferenciaInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaLiquidacionContable.Designer.vb">
+      <DependentUpon>UnaLiquidacionContable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaLiquidacionContable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionLotesAImputar.Designer.vb">
+      <DependentUpon>OpcionLotesAImputar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionLotesAImputar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnMediosPago.Designer.vb">
+      <DependentUpon>UnMediosPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnMediosPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReciboDebitoCreditoOtrosProveedores.Designer.vb">
+      <DependentUpon>UnReciboDebitoCreditoOtrosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReciboDebitoCreditoOtrosProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReciboDiferencia.Designer.vb">
+      <DependentUpon>UnReciboDiferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReciboDiferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTablaArticulosCliente.Designer.vb">
+      <DependentUpon>UnaTablaArticulosCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTablaArticulosCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTablaCajas.Designer.vb">
+      <DependentUpon>UnaTablaCajas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTablaCajas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosEmpresa.Designer.vb">
+      <DependentUpon>DatosEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DatosEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encriptar.vb" />
+    <Compile Include="ListaFamiliares.Designer.vb">
+      <DependentUpon>ListaFamiliares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaFamiliares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaLibroIvaVenta.Designer.vb">
+      <DependentUpon>ListaLibroIvaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaLibroIvaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPercepcionesEfectuadas.Designer.vb">
+      <DependentUpon>ListaPercepcionesEfectuadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPercepcionesEfectuadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRecibosEmitido.Designer.vb">
+      <DependentUpon>ListaRecibosEmitido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRecibosEmitido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRecibosFaltantes.Designer.vb">
+      <DependentUpon>ListaRecibosFaltantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRecibosFaltantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRetencionesEfectuadas.Designer.vb">
+      <DependentUpon>ListaRetencionesEfectuadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRetencionesEfectuadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSaldosContablesDetalle.Designer.vb">
+      <DependentUpon>ListaSaldosContablesDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSaldosContablesDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSaldosContables.Designer.vb">
+      <DependentUpon>ListaSaldosContables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSaldosContables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSaldosSueldosImputaciones.Designer.vb">
+      <DependentUpon>ListaSaldosSueldosImputaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSaldosSueldosImputaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaCtaCteSueldos.Designer.vb">
+      <DependentUpon>UnaCtaCteSueldos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaCtaCteSueldos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MontoALetras.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRetencionesPorProvincia.Designer.vb">
+      <DependentUpon>ListaRetencionesPorProvincia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRetencionesPorProvincia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaReAsignacionFactura.Designer.vb">
+      <DependentUpon>UnaReAsignacionFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaReAsignacionFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaReAsignacionRemito.Designer.vb">
+      <DependentUpon>UnaReAsignacionRemito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaReAsignacionRemito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarRetencionesProvincias.Designer.vb">
+      <DependentUpon>SeleccionarRetencionesProvincias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarRetencionesProvincias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionBancoSucursal.Designer.vb">
+      <DependentUpon>OpcionBancoSucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionBancoSucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuncionesPantalla.vb" />
+    <Compile Include="ClaseImpresionPantalla.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FuncionesParaAsientos.vb" />
+    <Compile Include="ListaAsientos.Designer.vb">
+      <DependentUpon>ListaAsientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaAsientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCentrosDeCosto.Designer.vb">
+      <DependentUpon>ListaCentrosDeCosto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCentrosDeCosto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaLotesFacturasProveedorAfectaLotes.Designer.vb">
+      <DependentUpon>ListaLotesFacturasProveedorAfectaLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaLotesFacturasProveedorAfectaLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarCuenta.Designer.vb">
+      <DependentUpon>SeleccionarCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaConsumos.Designer.vb">
+      <DependentUpon>ListaConsumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaConsumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCuentasDelCentro.Designer.vb">
+      <DependentUpon>ListaCuentasDelCentro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCuentasDelCentro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSubCuentas.Designer.vb">
+      <DependentUpon>ListaSubCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSubCuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDevolucionInsumos.Designer.vb">
+      <DependentUpon>ListaDevolucionInsumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDevolucionInsumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaNegociosYCosteos.Designer.vb">
+      <DependentUpon>ListaNegociosYCosteos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaNegociosYCosteos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaOtrosProveedores.Designer.vb">
+      <DependentUpon>ListaOtrosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaOtrosProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionInsumo.Designer.vb">
+      <DependentUpon>OpcionInsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionInsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarCheques.Designer.vb">
+      <DependentUpon>SeleccionarCheques.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarCheques.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarCuentaDocumento.Designer.vb">
+      <DependentUpon>SeleccionarCuentaDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarCuentaDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTablaCierreContable.Designer.vb">
+      <DependentUpon>UnaTablaCierreContable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTablaCierreContable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCanjeCheque.Designer.vb">
+      <DependentUpon>UnCanjeCheque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCanjeCheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCambioPassword.Designer.vb">
+      <DependentUpon>UnCambioPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCambioPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCambioProveedorIngresoMercaderia.Designer.vb">
+      <DependentUpon>UnCambioProveedorIngresoMercaderia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCambioProveedorIngresoMercaderia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnChequeReemplazo.Designer.vb">
+      <DependentUpon>UnChequeReemplazo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnChequeReemplazo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnPerfil.Designer.vb">
+      <DependentUpon>UnPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReciboOtrosProveedores.Designer.vb">
+      <DependentUpon>UnReciboOtrosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReciboOtrosProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReciboPagoFactura.Designer.vb">
+      <DependentUpon>UnReciboPagoFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReciboPagoFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReciboReposicion.Designer.vb">
+      <DependentUpon>UnReciboReposicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReciboReposicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnRecuperoSenia.Designer.vb">
+      <DependentUpon>UnRecuperoSenia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnRecuperoSenia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReemplazoChequeEnContable.Designer.vb">
+      <DependentUpon>UnReemplazoChequeEnContable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReemplazoChequeEnContable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnRemitoLogistico.Designer.vb">
+      <DependentUpon>UnRemitoLogistico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnRemitoLogistico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnRemitoReemplazo.Designer.vb">
+      <DependentUpon>UnRemitoReemplazo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnRemitoReemplazo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReprocesoLotesNuevo.Designer.vb">
+      <DependentUpon>UnReprocesoLotesNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReprocesoLotesNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnResumenChequesDiario.Designer.vb">
+      <DependentUpon>UnResumenChequesDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnResumenChequesDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnSaldoInicial.Designer.vb">
+      <DependentUpon>UnSaldoInicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnSaldoInicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnSaldoInicialPlanDeCuentas.Designer.vb">
+      <DependentUpon>UnSaldoInicialPlanDeCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnSaldoInicialPlanDeCuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaDevolucionRecepcion.Designer.vb">
+      <DependentUpon>UnaDevolucionRecepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaDevolucionRecepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCosteo.Designer.vb">
+      <DependentUpon>UnCosteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCosteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnOtroProveedor.Designer.vb">
+      <DependentUpon>UnOtroProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnOtroProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnPuntosDeVenta.Designer.vb">
+      <DependentUpon>UnPuntosDeVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnPuntosDeVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaListaDePrecios.Designer.vb">
+      <DependentUpon>UnaListaDePrecios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaListaDePrecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaNVLP.Designer.vb">
+      <DependentUpon>ListaNVLP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaNVLP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PruebaPrintDocument.Designer.vb">
+      <DependentUpon>PruebaPrintDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PruebaPrintDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSaldosOtrosPagosDetalle.Designer.vb">
+      <DependentUpon>ListaSaldosOtrosPagosDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSaldosOtrosPagosDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaOtrasFacturas.Designer.vb">
+      <DependentUpon>ListaOtrasFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaOtrasFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaEmpleados.Designer.vb">
+      <DependentUpon>ListaEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRecibosSueldo.Designer.vb">
+      <DependentUpon>ListaRecibosSueldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRecibosSueldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionLegajos.Designer.vb">
+      <DependentUpon>OpcionLegajos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionLegajos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaOrdenPagoSueldos.Designer.vb">
+      <DependentUpon>UnaOrdenPagoSueldos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaOrdenPagoSueldos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalisisResulatdosReventaConsignacio.Designer.vb">
+      <DependentUpon>AnalisisResulatdosReventaConsignacio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisisResulatdosReventaConsignacio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaFacturaOtrosProveedores.Designer.vb">
+      <DependentUpon>UnaFacturaOtrosProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaFacturaOtrosProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnLegajo.Designer.vb">
+      <DependentUpon>UnLegajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnLegajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnReciboSueldo.Designer.vb">
+      <DependentUpon>UnReciboSueldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnReciboSueldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnGastoBancario.Designer.vb">
+      <DependentUpon>UnGastoBancario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnGastoBancario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaMovimientosGastosBancario.Designer.vb">
+      <DependentUpon>ListaMovimientosGastosBancario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaMovimientosGastosBancario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPrestamos.Designer.vb">
+      <DependentUpon>ListaPrestamos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPrestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnChequesPropios.Designer.vb">
+      <DependentUpon>UnChequesPropios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnChequesPropios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnMovimientoPrestamo.Designer.vb">
+      <DependentUpon>UnMovimientoPrestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnMovimientoPrestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSaldosPrestamosDetalle.Designer.vb">
+      <DependentUpon>ListaSaldosPrestamosDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSaldosPrestamosDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnPrestamo.Designer.vb">
+      <DependentUpon>UnPrestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnPrestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPasesDeCaja.Designer.vb">
+      <DependentUpon>ListaPasesDeCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPasesDeCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionLetra.Designer.vb">
+      <DependentUpon>OpcionLetra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionLetra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionPaseCaja.Designer.vb">
+      <DependentUpon>OpcionPaseCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionPaseCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnChequesEnCartera.Designer.vb">
+      <DependentUpon>UnChequesEnCartera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnChequesEnCartera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnMovimientoBancario.Designer.vb">
+      <DependentUpon>UnMovimientoBancario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnMovimientoBancario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnPaseCaja.Designer.vb">
+      <DependentUpon>UnPaseCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnPaseCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCierreCajaDetalle.Designer.vb">
+      <DependentUpon>UnCierreCajaDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCierreCajaDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaBancos.Designer.vb">
+      <DependentUpon>ListaBancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaBancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaMovimientosBancario.Designer.vb">
+      <DependentUpon>ListaMovimientosBancario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaMovimientosBancario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnResumenChequesPropios.Designer.vb">
+      <DependentUpon>UnResumenChequesPropios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnResumenChequesPropios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnSaldosCuentas.Designer.vb">
+      <DependentUpon>UnSaldosCuentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnSaldosCuentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTablaRetenciones.Designer.vb">
+      <DependentUpon>UnaTablaRetenciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTablaRetenciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionEmisor.Designer.vb">
+      <DependentUpon>OpcionEmisor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionEmisor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCierreCaja.Designer.vb">
+      <DependentUpon>UnCierreCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCierreCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionFechas.Designer.vb">
+      <DependentUpon>OpcionFechas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionFechas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionaLotesAAsignar.Designer.vb">
+      <DependentUpon>SeleccionaLotesAAsignar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionaLotesAAsignar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnalisisLotes.Designer.vb">
+      <DependentUpon>AnalisisLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnalisisLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrada.Designer.vb">
+      <DependentUpon>Entrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaNotasTerceros.Designer.vb">
+      <DependentUpon>ListaNotasTerceros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaNotasTerceros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaOrdenDeCompra.Designer.vb">
+      <DependentUpon>ListaOrdenDeCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaOrdenDeCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRecepciones.Designer.vb">
+      <DependentUpon>ListaRecepciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRecepciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaReprocesos.Designer.vb">
+      <DependentUpon>ListaReprocesos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaReprocesos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaStockLotes.Designer.vb">
+      <DependentUpon>ListaStockLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaStockLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaTransferenciasInsumo.Designer.vb">
+      <DependentUpon>ListaTransferenciasInsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaTransferenciasInsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionIngreso.Designer.vb">
+      <DependentUpon>OpcionIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionIngreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaStockInsumos.Designer.vb">
+      <DependentUpon>ListaStockInsumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaStockInsumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionReproceso.Designer.vb">
+      <DependentUpon>OpcionReproceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionReproceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarVarios.Designer.vb">
+      <DependentUpon>SeleccionarVarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarVarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaRecepcion.Designer.vb">
+      <DependentUpon>UnaRecepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaRecepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDescartes.Designer.vb">
+      <DependentUpon>ListaDescartes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDescartes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDevolucionLotes.Designer.vb">
+      <DependentUpon>ListaDevolucionLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDevolucionLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaLiquidaciones.Designer.vb">
+      <DependentUpon>ListaLiquidaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaLiquidaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaTransferencias.Designer.vb">
+      <DependentUpon>ListaTransferencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaTransferencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionProveedor.Designer.vb">
+      <DependentUpon>OpcionProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionTransferencia.Designer.vb">
+      <DependentUpon>OpcionTransferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionTransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaDevolucionLote.Designer.vb">
+      <DependentUpon>UnaDevolucionLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaDevolucionLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaLiquidacion.Designer.vb">
+      <DependentUpon>UnaLiquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaLiquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaPreLiquidacion.Designer.vb">
+      <DependentUpon>UnaPreLiquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaPreLiquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaFacturasProveedor.Designer.vb">
+      <DependentUpon>ListaFacturasProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaFacturasProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaNotasCredito.Designer.vb">
+      <DependentUpon>ListaNotasCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaNotasCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuestraLotesAsignados.Designer.vb">
+      <DependentUpon>MuestraLotesAsignados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MuestraLotesAsignados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuestraStockArticulo.Designer.vb">
+      <DependentUpon>MuestraStockArticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MuestraStockArticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionFacturas.Designer.vb">
+      <DependentUpon>OpcionFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionRemito.Designer.vb">
+      <DependentUpon>OpcionRemito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionRemito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaFactura.Designer.vb">
+      <DependentUpon>UnaFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaNotaCredito.Designer.vb">
+      <DependentUpon>UnaNotaCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaNotaCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTabla.Designer.vb">
+      <DependentUpon>UnaTabla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTabla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTransferenciaInsumo.Designer.vb">
+      <DependentUpon>UnaTransferenciaInsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTransferenciaInsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnDescarte.Designer.vb">
+      <DependentUpon>UnDescarte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnDescarte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnIngresoMercaderia.Designer.vb">
+      <DependentUpon>UnIngresoMercaderia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnIngresoMercaderia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionTipoNota.Designer.vb">
+      <DependentUpon>OpcionTipoNota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionTipoNota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnRemito.Designer.vb">
+      <DependentUpon>UnRemito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnRemito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrasabilidadLotes.Designer.vb">
+      <DependentUpon>TrasabilidadLotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrasabilidadLotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaCtaCte.Designer.vb">
+      <DependentUpon>UnaCtaCte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaCtaCte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaArticulos.Designer.vb">
+      <DependentUpon>ListaArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario.designer.vb">
+      <DependentUpon>Calendario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases.vb" />
+    <Compile Include="UnaTablaEnvases.Designer.vb">
+      <DependentUpon>UnaTablaEnvases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTablaEnvases.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones.vb" />
+    <Compile Include="ListaClientes.Designer.vb">
+      <DependentUpon>ListaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDevoluciones.Designer.vb">
+      <DependentUpon>ListaDevoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDevoluciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaIngresoMercaderias.Designer.vb">
+      <DependentUpon>ListaIngresoMercaderias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaIngresoMercaderias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionaLotesDevolucion.Designer.vb">
+      <DependentUpon>SeleccionaLotesDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionaLotesDevolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaRemitos.Designer.vb">
+      <DependentUpon>ListaRemitos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaRemitos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lotes.Designer.vb">
+      <DependentUpon>Lotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarReprocesado.Designer.vb">
+      <DependentUpon>SeleccionarReprocesado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarReprocesado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prueba.Designer.vb">
+      <DependentUpon>Prueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaDevolucion.Designer.vb">
+      <DependentUpon>UnaDevolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaDevolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnLote.Designer.vb">
+      <DependentUpon>UnLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnCliente.Designer.vb">
+      <DependentUpon>UnCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaProveedoresArbol.Designer.vb">
+      <DependentUpon>ListaProveedoresArbol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProveedoresArbol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnProveedor.Designer.vb">
+      <DependentUpon>UnProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnArticulo.Designer.vb">
+      <DependentUpon>UnArticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnArticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnaTransferencia.Designer.vb">
+      <DependentUpon>UnaTransferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnaTransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaSaldosBancoDetalle.Designer.vb">
+      <DependentUpon>ListaSaldosBancoDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaSaldosBancoDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnSeteoDocumento.designer.vb">
+      <DependentUpon>UnSeteoDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnSeteoDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnSeteoImpresora.Designer.vb">
+      <DependentUpon>UnSeteoImpresora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnSeteoImpresora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnTextoParaRecibo.Designer.vb">
+      <DependentUpon>UnTextoParaRecibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnTextoParaRecibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnTxtARBA.Designer.vb">
+      <DependentUpon>UnTxtARBA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnTxtARBA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnTXTPerRetPercibida.Designer.vb">
+      <DependentUpon>UnTXTPerRetPercibida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnTXTPerRetPercibida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnUsuario.Designer.vb">
+      <DependentUpon>UnUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Variables.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ValorizaLote.Designer.vb">
+      <DependentUpon>ValorizaLote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ValorizaLote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vigencias.Designer.vb">
+      <DependentUpon>Vigencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vigencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnalisisComprasImportacion.resx">
+      <DependentUpon>AnalisisComprasImportacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalisisCompraVentaPorCliente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalisisCompraVentaPorCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalisisDeCosteos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalisisDeCosteos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalisisResultadosLotesCosteo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalisisResultadosLotesCosteo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArreglaSaldosIniciales.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ArreglaSaldosIniciales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArreglaStock.resx">
+      <DependentUpon>ArreglaStock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cantidades.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Cantidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Copiafechaafechaentregaenremitoscabeza.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Copiafechaafechaentregaenremitoscabeza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuilNoValidos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CuilNoValidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCierreFactura.resx">
+      <DependentUpon>ListaCierreFactura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCompraDivisas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaCompraDivisas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDevolucionIngresoLogistico.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaDevolucionIngresoLogistico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDiferenciaInventario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaDiferenciaInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaChequesSinNotaDebito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaChequesSinNotaDebito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoConsumosPT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListadoConsumosPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaFacturas.resx">
+      <DependentUpon>ListaFacturas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaFcaturasFCE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaFcaturasFCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaNotasFinancierasOtrosProveedores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaNotasFinancierasOtrosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSICORE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSICORE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaIngresosArticulosLogisticos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaIngresosArticulosLogisticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaLibroIvaCompra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaLibroIvaCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaListaDePrecios.resx">
+      <DependentUpon>ListaListaDePrecios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaListaDePreciosProveedores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaListaDePreciosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPedidos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaPedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPercepcionesPercibidas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaPercepcionesPercibidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPlanDeCuentas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaPlanDeCuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRemitosLogisticos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRemitosLogisticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRetencionesPercibidas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRetencionesPercibidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaStockArticulosLogisticos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaStockArticulosLogisticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaTransferenciasLogisticas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaTransferenciasLogisticas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionCesion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionCesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionClienteDesdeHasta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionClienteDesdeHasta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionClientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionCosteo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionCosteo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionDirectorio.resx">
+      <DependentUpon>OpcionDirectorio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionFacturasElectronica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionFacturasElectronica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionCompraVentaPorLotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionCompraVentaPorLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionDocumentosNoImputados.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionDocumentosNoImputados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionFondoFijo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionFondoFijo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionImportacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionImportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionImportacionExcel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionImportacionExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionInformeGestionCompra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionInformeGestionCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionIFCO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionIFCO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionInformeComprobantesQueAfectaALotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionInformeComprobantesQueAfectaALotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionInformeLogistico.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionInformeLogistico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionInformeParaInventario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionInformeParaInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaArticulosSecuencial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaArticulosSecuencial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaProveedores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRecuperoSenia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRecuperoSenia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSueldosOrdenPago.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSueldosOrdenPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionEmisorYLetra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionEmisorYLetra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionInformeLotesReventasFacturados.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionInformeLotesReventasFacturados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionListaDePrecios.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionListaDePrecios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionLotesAImputarFacturasProveedor.resx">
+      <DependentUpon>OpcionLotesAImputarFacturasProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionNumero.resx">
+      <DependentUpon>OpcionNumero.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionOtrosProveedores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionOtrosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionInformeReprocesos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionInformeReprocesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionPagos.resx">
+      <DependentUpon>OpcionPagos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionParaNegocios.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionParaNegocios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionPedidos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionPedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionInformeOrdenCompra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionInformeOrdenCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionReciboFactura.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionReciboFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionReproceso1.resx">
+      <DependentUpon>OpcionReproceso1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionVentas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSaldosFondosFijoDetalle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSaldosFondosFijoDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionVentasTotalesPorArticulos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionVentasTotalesPorArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionVentasYCostosDeLotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionVentasYCostosDeLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionaIngresos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionaIngresos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarRemitosParaFactura.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionarRemitosParaFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaActualizacionPedido.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaActualizacionPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaCesionFactura.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaCesionFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaCuentaBancaria.resx">
+      <DependentUpon>UnaCuentaBancaria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaNVLPContable.resx">
+      <DependentUpon>UnaNVLPContable.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaOrdenCompra.resx">
+      <DependentUpon>UnaOrdenCompra.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaPreFactura.resx">
+      <DependentUpon>UnaPreFactura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaRetencion.resx">
+      <DependentUpon>UnaRetencion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnAsiento.resx">
+      <DependentUpon>UnAsiento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTablaSucursalCliente.resx">
+      <DependentUpon>UnaTablaSucursalCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTablaTransporte.resx">
+      <DependentUpon>UnaTablaTransporte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnSaldoFCE.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnSaldoFCE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCompobanteFCE.resx">
+      <DependentUpon>UnCompobanteFCE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnComprobanteAImputar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnComprobanteAImputar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnComprobanteAsociado.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnComprobanteAsociado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnConsumoPT.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnConsumoPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReciboDebitoCreditoGenerica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReciboDebitoCreditoGenerica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionaArticulosPedido.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionaArticulosPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaDevolucionIngresoLogistico.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaDevolucionIngresoLogistico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTransferenciaLogistica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTransferenciaLogistica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnChequeRechazo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnChequeRechazo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReciboDebitoCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReciboDebitoCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnIngresoArticulosLogisticos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnIngresoArticulosLogisticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnPedido.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionaLotesAfectados.resx">
+      <DependentUpon>SeleccionaLotesAfectados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaFacturaProveedor.resx">
+      <DependentUpon>UnaFacturaProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaFacturaProveedorFondoFijo.resx">
+      <DependentUpon>UnaFacturaProveedorFondoFijo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaImputacionSaldosIniciales.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaImputacionSaldosIniciales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaLiquidacionInsumos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaLiquidacionInsumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaListaDePreciosProveedores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaListaDePreciosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaNVLP.resx">
+      <DependentUpon>UnaNVLP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTablaDeBalances.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTablaDeBalances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaRendicion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaRendicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaFondosFijos.resx">
+      <DependentUpon>ListaFondosFijos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRendiciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRendiciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnBalance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCierreFactura.resx">
+      <DependentUpon>UnCierreFactura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnConsumoDeInsumo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnConsumoDeInsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnDatosEmisor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnDatosEmisor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnFondoFijo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnFondoFijo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnMovimientoFondoFijo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnMovimientoFondoFijo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnRecibo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnRecibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaAgenda.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaAgenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaCompraDivisas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaCompraDivisas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaDiferenciaInventario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaDiferenciaInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaLiquidacionContable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaLiquidacionContable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTablaArticulosCliente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTablaArticulosCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTablaCajas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTablaCajas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosEmpresa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DatosEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaFamiliares.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaFamiliares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaLibroIvaVenta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaLibroIvaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPercepcionesEfectuadas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaPercepcionesEfectuadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRecibosEmitido.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRecibosEmitido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRecibosFaltantes.resx">
+      <DependentUpon>ListaRecibosFaltantes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRetencionesEfectuadas.resx">
+      <DependentUpon>ListaRetencionesEfectuadas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSaldosContables.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSaldosContables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSaldosContablesDetalle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSaldosContablesDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSaldosSueldosImputaciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSaldosSueldosImputaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaCtaCteSueldos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaCtaCteSueldos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRetencionesPorProvincia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRetencionesPorProvincia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaReAsignacionFactura.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaReAsignacionFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaReAsignacionRemito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaReAsignacionRemito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarRetencionesProvincias.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionarRetencionesProvincias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionBancoSucursal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionBancoSucursal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaAsientos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaAsientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCentrosDeCosto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaCentrosDeCosto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaLotesFacturasProveedorAfectaLotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaLotesFacturasProveedorAfectaLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarCuenta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionarCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaConsumos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaConsumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCuentasDelCentro.resx">
+      <DependentUpon>ListaCuentasDelCentro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSubCuentas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSubCuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDevolucionInsumos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaDevolucionInsumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaNegociosYCosteos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaNegociosYCosteos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaOtrosProveedores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaOtrosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionInsumo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionInsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarCheques.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionarCheques.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarCuentaDocumento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionarCuentaDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTablaCierreContable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTablaCierreContable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCanjeCheque.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnCanjeCheque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCambioPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnCambioPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCambioProveedorIngresoMercaderia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnCambioProveedorIngresoMercaderia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnChequeReemplazo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnChequeReemplazo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionLotesAImputar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionLotesAImputar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnMediosPago.resx">
+      <DependentUpon>UnMediosPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnPerfil.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReciboDebitoCreditoOtrosProveedores.resx">
+      <DependentUpon>UnReciboDebitoCreditoOtrosProveedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReciboDiferencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReciboDiferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReciboOtrosProveedores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReciboOtrosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReciboPagoFactura.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReciboPagoFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReciboReposicion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReciboReposicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnRecuperoSenia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnRecuperoSenia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReemplazoChequeEnContable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReemplazoChequeEnContable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnRemitoLogistico.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnRemitoLogistico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnRemitoReemplazo.resx">
+      <DependentUpon>UnRemitoReemplazo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReprocesoLotesNuevo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReprocesoLotesNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnResumenChequesDiario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnResumenChequesDiario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnSaldoInicial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnSaldoInicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnSaldoInicialPlanDeCuentas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnSaldoInicialPlanDeCuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaDevolucionRecepcion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaDevolucionRecepcion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCosteo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnCosteo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnOtroProveedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnOtroProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnPuntosDeVenta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnPuntosDeVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaListaDePrecios.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaListaDePrecios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaNVLP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaNVLP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaOtrasFacturas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaOtrasFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaEmpleados.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRecibosSueldo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRecibosSueldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionLegajos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionLegajos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PruebaPrintDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PruebaPrintDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSaldosOtrosPagosDetalle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSaldosOtrosPagosDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaOrdenPagoSueldos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaOrdenPagoSueldos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalisisResulatdosReventaConsignacio.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalisisResulatdosReventaConsignacio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaFacturaOtrosProveedores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaFacturaOtrosProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnLegajo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnLegajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnReciboSueldo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnReciboSueldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnGastoBancario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnGastoBancario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaMovimientosGastosBancario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaMovimientosGastosBancario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPrestamos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaPrestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnChequesPropios.resx">
+      <DependentUpon>UnChequesPropios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnMovimientoPrestamo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnMovimientoPrestamo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnPrestamo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnPrestamo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSaldosPrestamosDetalle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSaldosPrestamosDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPasesDeCaja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaPasesDeCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionLetra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionLetra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionPaseCaja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionPaseCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnChequesEnCartera.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnChequesEnCartera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnMovimientoBancario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnMovimientoBancario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnPaseCaja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnPaseCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCierreCajaDetalle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnCierreCajaDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaBancos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaBancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaMovimientosBancario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaMovimientosBancario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnResumenChequesPropios.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnResumenChequesPropios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnSaldosCuentas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnSaldosCuentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTablaRetenciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTablaRetenciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionEmisor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionEmisor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCierreCaja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnCierreCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionFechas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionFechas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionaLotesAAsignar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionaLotesAAsignar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnalisisLotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnalisisLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrada.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Entrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaNotasTerceros.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaNotasTerceros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaOrdenDeCompra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaOrdenDeCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRecepciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRecepciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaReprocesos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaReprocesos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaStockLotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaStockLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaTransferenciasInsumo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaTransferenciasInsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionIngreso.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionIngreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaStockInsumos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaStockInsumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionReproceso.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionReproceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarVarios.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionarVarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaRecepcion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaRecepcion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDescartes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaDescartes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDevolucionLotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaDevolucionLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaLiquidaciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaLiquidaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaTransferencias.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaTransferencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionProveedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionTransferencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionTransferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaDevolucionLote.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaDevolucionLote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaLiquidacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaLiquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaPreLiquidacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaPreLiquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaFacturasProveedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaFacturasProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaNotasCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaNotasCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuestraLotesAsignados.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MuestraLotesAsignados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuestraStockArticulo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MuestraStockArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionFacturas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionRemito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionRemito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaFactura.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaNotaCredito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaNotaCredito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTabla.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTabla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTransferenciaInsumo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTransferenciaInsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnDescarte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnDescarte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnIngresoMercaderia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnIngresoMercaderia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionTipoNota.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpcionTipoNota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnRemito.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnRemito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrasabilidadLotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrasabilidadLotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaCtaCte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaCtaCte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaArticulos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendario.resx">
+      <DependentUpon>Calendario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTablaEnvases.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTablaEnvases.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaClientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDevoluciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaDevoluciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaIngresoMercaderias.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaIngresoMercaderias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionaLotesDevolucion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionaLotesDevolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaRemitos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaRemitos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarReprocesado.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SeleccionarReprocesado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prueba.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaDevolucion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaDevolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnLote.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnLote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnCliente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaProveedoresArbol.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaProveedoresArbol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnProveedor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnArticulo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnaTransferencia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnaTransferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaSaldosBancoDetalle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaSaldosBancoDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnSeteoDocumento.resx">
+      <DependentUpon>UnSeteoDocumento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnSeteoImpresora.resx">
+      <DependentUpon>UnSeteoImpresora.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnTextoParaRecibo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnTextoParaRecibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnTxtARBA.resx">
+      <DependentUpon>UnTxtARBA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnTXTPerRetPercibida.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnTXTPerRetPercibida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnUsuario.resx">
+      <DependentUpon>UnUsuario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValorizaLote.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ValorizaLote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vigencias.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Vigencias.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CAbierto.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ccerrado.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Impresora.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Grabar.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Nota.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Archivo.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eliminar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Factura_43.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Devolucion.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Basurero.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lupa.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icono176.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CHECKMRK.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shell_28.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Almanaque.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Administrar.jpg" />
+    <None Include="ClassDiagram2.cd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram3.cd" />
+    <None Include="Resources\Interleaved 2of5.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
